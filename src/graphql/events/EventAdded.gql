@@ -1,0 +1,7 @@
+#import "./EventFragment.gql"
+
+subscription eventAdded {
+  eventAdded {
+    ...Event
+  }
+}

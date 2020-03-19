@@ -1,0 +1,7 @@
+#import "./EventFragment.gql"
+
+query events {
+  events(orderBy: date__DESC) {
+    ...Event
+  }
+}

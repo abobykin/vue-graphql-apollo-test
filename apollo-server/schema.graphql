@@ -1,0 +1,31 @@
+scalar JSON
+
+type Event {
+  id: ID!
+  name: String
+  date: String
+}
+
+input EventInput {
+  name: String
+  date: String
+}
+
+enum EventOrderByInput {
+  date__ASC
+  date__DESC
+  name__ASC
+  name__DESC
+}
+
+type Query {
+  events(orderBy: EventOrderByInput): [Event]
+}
+
+type Mutation {
+  addEvent (input: EventInput!): Event!
+}
+
+type Subscription {
+  eventAdded: Event!
+}

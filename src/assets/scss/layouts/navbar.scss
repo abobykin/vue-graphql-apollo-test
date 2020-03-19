@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.navbar {
+  background-color: $green;
+  padding: 20px 0;
+  &-link {
+    color: $white;
+    padding: 10px 20px;
+    font-size: 17px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.45s;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      background-color: rgba(57, 73, 92, 0.6);
+    }
+    &.router-link-active {
+      background-color: $dark-gray;
+    }
+  }
+}
