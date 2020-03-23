@@ -26,7 +26,7 @@
 </template>
 
 <script>
-/* eslint-disable */
+
 export default {
   name: 'UiKitInput',
   props: {
@@ -43,11 +43,11 @@ export default {
       required: true,
     },
     errors: {
-      type: Object | null,
+      type: Object,
       default: () => ({}),
     },
     errorMessages: {
-      type: Object | null,
+      type: Object,
       default: () => ({}),
     },
     type: {
