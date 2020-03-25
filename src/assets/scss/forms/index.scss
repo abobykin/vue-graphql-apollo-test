@@ -154,19 +154,3 @@ form {
     font-size: 14px;
   }
 }
-
-.event-row {
-  max-width: 560px;
-  padding: 10px 0;
-  color: $primary;
-  border-bottom: 1px solid $lighten-gray;
-  transition: all 0.45s;
-  &__date {
-    color: $light-gray;
-  }
-  div {
-    display: grid;
-    grid-template-columns: auto 200px;
-    column-gap: 15px;
-  }
-}

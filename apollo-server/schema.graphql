@@ -23,9 +23,11 @@ type Query {
 }
 
 type Mutation {
-  addEvent (input: EventInput!): Event!
+  addEvent(input: EventInput!): Event!
+  removeEvent(id: ID!): ID!
 }
 
 type Subscription {
   eventAdded: Event!
+  eventRemoved: Event!
 }
